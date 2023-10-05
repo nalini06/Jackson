@@ -44,6 +44,7 @@ public class Application {
 			User user = objectMapper.readValue(jsonString, User.class);
 
 			// Access and print user information
+			System.out.println("Deserlizer Output: ");
 			System.out.println("User ID: " + user.getUserId());
 			System.out.println("First Name: " + user.getFirstName());
 			System.out.println("Last Name: " + user.getLastName());
